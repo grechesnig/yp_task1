@@ -1,3 +1,4 @@
+from graphic_arts.start_game_banner import run_screensaver
 from random import randint
 
 
@@ -75,7 +76,8 @@ def choice_char_class() -> str:
     return char_class
 
 
-def main() -> None:
+if __name__ == '__main__':
+    run_screensaver()
     print('Приветствую тебя, искатель приключений!')
     print('Прежде чем начать игру...')
     char_name: str = input('...назови себя: ')
